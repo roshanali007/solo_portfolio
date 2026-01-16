@@ -2227,7 +2227,7 @@ form button:hover {
 
 @media (max-width: 376px){
     .container .project h1{
-        font-size: 1.5em;
+        font-size: 32px;
     }
     .media-container1{
         position: relative;
@@ -2280,6 +2280,8 @@ form button:hover {
         top: 0;
         right: 0;
         left: 0;
+        padding-top: 12px;
+        padding-bottom: 24px;
     } 
     .seeyou{
         display: flex;
@@ -2288,7 +2290,56 @@ form button:hover {
     .project_section{
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 16px;
+    }
+    .container{
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+    .progress-section {
+        margin: 0;
+    }
+    .floating-ball2{
+        display: none;
+    }
+    .about-title{
+        font-size: 32px;
+    }
+    .skills{
+        font-size: 32px;
+    }
+    .blog24 h1{
+        font-size: 32px;
+    }
+    .contact-section{
+        padding: 32px 0;
+    }
+    .footer{
+        padding-top: 42px;
+    }
+    .arrows img{
+        display: none;
+    }
+    .chat_with{
+        position:fixed;
+        bottom: 10px;
+        right: 10px;
+        background-color: black;
+        border-radius: 20px;
+        z-index: 1000;
+    }
+    .chat_text{
+        font-size: 12px;
+        font-weight: 800;
+        font-family: 'Clash Display', sans-serif;
+        padding: 12px 5px;
+    }
+    .chat_number{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
