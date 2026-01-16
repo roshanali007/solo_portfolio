@@ -1,0 +1,110 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #181818;
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .web-design-section {
+    padding: 60px 200px;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  .section-description {
+    font-size: 1rem;
+    margin-bottom: 40px;
+    color: #cccccc;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .parent-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1px;
+    align-items: stretch;
+    justify-items: center;
+  }
+  
+  .grid-item {
+    display: block;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s ease, filter 0.4s ease;
+    width: 100%;
+    max-width: 310px;
+    height: 750px; /* Force same height for all */
+  }
+  
+  .grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease, filter 0.4s ease;
+    filter: grayscale(100%);
+  }
+  
+  .grid-item:hover img {
+    transform: scale(1.05);
+    filter: grayscale(0%);
+  }
+  
+
+  /* Tablet: Reduce image height slightly */
+@media (max-width: 1024px) {
+    .grid-item {
+      height: 600px;
+    }
+  }
+  
+  /* Mobile: Single-column layout and smaller image height */
+  @media (max-width: 768px) {
+    .parent-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .grid-item {
+      max-width: 90%;
+      height: 500px;
+    }
+  
+    .section-title {
+      font-size: 2rem;
+    }
+  
+    .section-description {
+      font-size: 0.95rem;
+    }
+  }
+  
+  /* Small Mobile: Further reduce image size and spacing */
+  @media (max-width: 480px) {
+    .grid-item {
+      height: 400px;
+    }
+  
+    .section-title {
+      font-size: 1.8rem;
+    }
+  
+    .section-description {
+      font-size: 0.9rem;
+      padding: 0 10px;
+    }
+  
+    .web-design-section {
+      padding: 40px 10px;
+    }
+  }
+  
